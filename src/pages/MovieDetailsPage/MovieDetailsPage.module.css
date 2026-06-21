@@ -1,0 +1,22 @@
+.container {
+  padding: 20px;
+}
+.btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: black;
+}
+.movieInfo {
+  display: flex;
+  gap: 20px;
+}
+.details {
+  max-width: 600px;
+}
+.extraInfo {
+  margin: 20px 0;
+}
