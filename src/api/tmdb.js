@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-// Kendi API "Read Access Token" anahtarını buraya eklemelisin
-const API_TOKEN = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyNGQ5MmU0ZTZhYzNjODliNmYyMjI3MGM0M2Y1NTRkMiIsIm5iZiI6MTc3NTY2MjM4My4xMjk5OTk5LCJzdWIiOiI2OWQ2NzUyZmYzODUxM2FmYjNjYThjNmMiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.DqKdSZM2ChZ0AZGKgR7iGUiZq8lmG8JbTJ0dxYeyCgo';
+// API anahtarını artık .env dosyasından çekiyoruz
+const API_TOKEN = import.meta.env.VITE_TMDB_API_TOKEN;
 
 const tmdbApi = axios.create({
   baseURL: 'https://api.themoviedb.org/3',
